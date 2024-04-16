@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test</title>
+</head>
+<body>
+    <iframe id="myIframe" width = "1000px" src="https://arrow-programming.github.io/verbose-octo-memory/" onload="refreshLink(this.contentWindow.location.href)"></iframe>
+<a href="#" target="_blank" id="button">Click here</a>
+</body>
+<script>
+
+var hyperLink = document.getElementById("myIframe").src;
+
+function refreshLink(link) {
+    hyperLink = link;
+    document.getElementById("button").href=hyperLink;
+}
+  
+ </script>
+</html>
